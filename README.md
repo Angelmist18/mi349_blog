@@ -1,2 +1,2 @@
-# boilerplate
-Basic HTML and CSS setup for simple web design
+# MI349_blog 
+My professional Blog site for potential employers to come.
