@@ -236,3 +236,54 @@ li {
 
     /* Any other styles that should change on mobile go here */
 }
+
+/* iPhone XS and similar devices */
+@media only screen and (max-width: 375px) and (-webkit-device-pixel-ratio: 3), 
+       only screen and (max-width: 375px) and (device-pixel-ratio: 3) {
+
+    body {
+        margin: 20px; /* reduced margins */
+        padding: 20px; /* reduced padding */
+    }
+
+    /* Adjustments to the navigation menu to make it more mobile-friendly */
+    nav.sticky-nav ul {
+        flex-direction: column; /* stack the links vertically */
+        align-items: center; /* center the links */
+    }
+
+    nav.sticky-nav ul li {
+        margin: 5px 0; /* reduce space between links */
+    }
+
+    /* Adjust the form layout for smaller screens */
+    .form-container {
+        padding: 10px; /* reduce padding */
+    }
+
+    .form label,
+    .form input, 
+    .form select, 
+    .form textarea {
+        flex-basis: 100%; /* make form elements full width */
+        margin-right: 0; /* remove margin */
+    }
+
+    .form label {
+        text-align: left; /* align labels to the left */
+        margin-bottom: 5px; /* add space below the label */
+    }
+
+    .form button {
+        margin-top: 10px; /* add some space above the submit button */
+    }
+
+    /* Adjust the size and layout of images to fit small screens */
+    .floated-figure {
+        float: none; /* prevent the image from floating */
+        margin: 0 auto; /* center the image */
+        width: 100%; /* make image full width */
+    }
+
+    /* Any other styles you want to adjust for the iPhone XS and similar devices */
+}
