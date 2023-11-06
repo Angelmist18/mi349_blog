@@ -171,9 +171,10 @@ li {
     margin-left: auto;
 }
 
-/* iPhone XS and similar devices */
+/* iPhone XS and similar devices -- Portrait */
 @media only screen and (max-width: 375px) and (-webkit-device-pixel-ratio: 3), 
-       only screen and (max-width: 375px) and (device-pixel-ratio: 3) {
+       only screen and (max-width: 375px) and (device-pixel-ratio: 3),
+       only screen and (orientation: portrait) {
 
     body {
         margin: 20px; /* reduced margins */
@@ -237,4 +238,59 @@ li {
     }
 
     /* Any other styles you want to adjust for the iPhone XS and similar devices */
+}
+
+/* Landscape */
+@media only screen 
+  and (max-height: 375px) 
+  and (orientation: landscape) {
+  /* Styles for landscape orientation */
+
+  body {
+    /* Adjust body margins and padding for landscape */
+    margin: 10px;
+    padding: 10px;
+  }
+
+  /* You might want to allow the navigation links to display inline in landscape */
+  nav.sticky-nav ul {
+    flex-direction: row; /* line the links up in a row */
+    justify-content: center; /* center the links */
+    padding: 0 10px; /* Add padding on the sides if needed */
+  }
+
+  nav.sticky-nav ul li {
+    margin: 0 5px; /* smaller margins between links */
+  }
+
+  /* Adjust the blog post images and content layout for landscape */
+  .blog-post {
+    flex-direction: row; /* side by side for larger view in landscape */
+  }
+
+  .post-image img {
+    max-width: 200px; /* slightly larger images for landscape */
+  }
+
+  /* Adjust the form layout */
+  .form label,
+  .form input, 
+  .form select, 
+  .form textarea {
+    /* You might want some elements to use more horizontal space in landscape */
+    flex-basis: auto; /* adjust basis as needed */
+  }
+
+  .form button {
+    margin-top: 0; /* adjust the button margin */
+  }
+
+  /* Adjust floated-figure for landscape */
+  .floated-figure {
+    /* You might float the image again or adjust its width in landscape */
+    float: left;
+    width: 50%; /* example: half-width for side-by-side effect */
+  }
+  
+  /* And any other specific landscape styles... */
 }
