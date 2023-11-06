@@ -171,35 +171,68 @@ li {
     margin-left: auto;
 }
 
-/* This is a media query for screens less than 768 pixels wide */
-@media (max-width: 768px) {
-    /* Styles inside this block will apply to screens with a width less than 768px */
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 20px;
+        padding: 20px;
+        font-size: smaller; /* Adjust font size for mobile */
+    }
 
+    /* Make navigation stack vertically and expand the touch area */
     nav.sticky-nav ul {
         flex-direction: column;
-        align-items: center;
-        padding: 0;
     }
 
     nav.sticky-nav ul li {
-        margin: 5px 0; /* Less space between the links on smaller screens */
+        margin-left: 0; /* Remove the margin between links */
+        margin-bottom: 10px; /* Add a little space between each item */
     }
 
-    /* Adjust font size for smaller screens */
-    body {
-        font-size: 14px;
+    /* Make the images responsive */
+    .floated-figure img,
+    .post-image img {
+        max-width: 100%;
+        height: auto;
     }
 
-    /* Adjust form input and button sizes for better touch interaction */
-    input[type="text"],
-    input[type="email"],
-    select,
-    textarea,
-    button {
-        width: 100%; /* Full width to maximize space */
-        font-size: 16px; /* Larger font for easier reading */
-        margin-bottom: 10px; /* Add space between form elements */
+    /* Adjust the form for mobile */
+    .form {
+        flex-direction: column;
     }
 
-    /* Other responsive adjustments can go here */
+    .form label {
+        flex-basis: 100%; /* Make labels take full width */
+        text-align: left; /* Align labels to the left */
+        margin-bottom: 5px; /* Add space below the label */
+    }
+
+    .form input,
+    .form select,
+    .form textarea,
+    .form button {
+        flex-basis: 100%; /* Make form elements take full width */
+        margin-right: 0; /* Remove margin */
+    }
+
+    /* If your navigation links are too close, increase the padding */
+    nav.sticky-nav ul li a {
+        padding: 10px; /* Larger touch area for links */
+        display: block; /* Makes the entire area clickable */
+    }
+
+    /* Adjust the size of headings */
+    h1 {
+        font-size: 2em; /* Smaller size for h1 on mobile */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Smaller size for h2 on mobile */
+    }
+
+    h3 {
+        font-size: 1.3em; /* Smaller size for h3 on mobile */
+    }
+
+    /* Any other styles that should change on mobile go here */
 }
