@@ -171,3 +171,35 @@ li {
     margin-left: auto;
 }
 
+/* This is a media query for screens less than 768 pixels wide */
+@media (max-width: 768px) {
+    /* Styles inside this block will apply to screens with a width less than 768px */
+
+    nav.sticky-nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav.sticky-nav ul li {
+        margin: 5px 0; /* Less space between the links on smaller screens */
+    }
+
+    /* Adjust font size for smaller screens */
+    body {
+        font-size: 14px;
+    }
+
+    /* Adjust form input and button sizes for better touch interaction */
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea,
+    button {
+        width: 100%; /* Full width to maximize space */
+        font-size: 16px; /* Larger font for easier reading */
+        margin-bottom: 10px; /* Add space between form elements */
+    }
+
+    /* Other responsive adjustments can go here */
+}
