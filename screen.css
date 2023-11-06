@@ -1,1 +1,173 @@
 /* Add screen styles below */
+
+html {
+    background: #e3e3e3;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 40px;
+    padding: 40px;
+    color: #242424;
+    border-top: 10px solid #242424;
+    background: #fff;
+}
+
+.sticky-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 2px solid #242424;
+}
+
+/* Navigation links Flexbox */
+nav.sticky-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+  
+nav.sticky-nav ul li {
+    margin-left: 50px; /* Adjust the space between the links */
+}
+  
+nav.sticky-nav ul li a {
+    color: #000; /* Default link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transitions for smooth hover effect */
+}
+  
+nav.sticky-nav ul li a:hover,
+nav.sticky-nav ul li a:focus { /* focus is for keyboard navigation */
+    color: #3498db; /* Color when hovered or focused */
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 0px 0px 10px 0px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.my-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.author-content {
+    margin-bottom: 20px;
+}
+
+.author {
+    font-size: 1.2em;
+    color: blue;
+}
+
+/* Index Flexbox */
+.blog-post {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.post-image {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.post-content {
+    flex: 1 1 auto;
+}
+
+p {
+    line-height: 1.4em;
+    font-size: large;
+}
+
+li {
+    line-height: 1.2em;
+    font-size: large;
+}
+
+.title-text {
+    text-align: center;
+}
+
+#blog {
+    border-top: 1px dotted #aaa;
+}
+
+.blog-post {
+    border-bottom: 1px dotted #aaa;
+}
+
+/* About Me Flexbox */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills, #about {
+    flex-basis: 50%;
+}
+
+.floated-figure {
+    float: left;
+    margin-right: 100px;
+    width: 400px;
+}
+
+.floated-figure img {
+    width: 100%; 
+    height: auto; 
+}
+
+.floated-figure figcaption {
+    text-align: center;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Contact Me Flexbox */
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.form label {
+    flex-basis: 20%;
+    margin-right: 10px;
+    text-align: right;
+    align-self: center;
+}
+
+.form input, .form select, .form textarea {
+    flex-basis: 75%;
+    flex-grow: 1;
+}
+
+.form button {
+    margin-left: auto;
+}
+

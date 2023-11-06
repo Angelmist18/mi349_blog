@@ -5,74 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sean's Blog</title>
-    <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
       <h1>Welcome to Sean's Blog!</h1>
-      <p>Blog posts from my nearest and dearest.</p>
-      <p><img alt="Picture of Sean." src="images/MyPicture_70.png"></p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
-        </ul>
-      </nav>
+      <p class="title-text">Blog posts from my nearest and dearest.</p>
+      <p class="my-image"><img alt="Picture of Sean." src="images/MyPicture_70.png"></p>
     </header>
+    <nav class="sticky-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    
     <section id="blog">
       <h2>The Opinions that Count!</h2>
       <article class="blog-post">
-        <h3>Thoughts from my closest friend...</h3>
-        <address class="author">Shane Dietrich</address>
-        <time datetime="2023-10-25" title="October 25, 2023">October 25,2023</time>
-        <p><img alt="Picture of Shane. Sean's close friend." src="images/Shane_D.png"></p>
-        <table>
-          <tr>
-            <th>Date</th>
-            <th>Event</th>
-            <th>Location</th>
-          </tr>
-          <tr>
-            <td>2005</td>
-            <td>The year we first met!</td>
-            <td>Battle Creek, MI</td>
-          </tr>
-          <tr>
-            <td>October 31, 2006</td>
-            <td>Our first Halloween festivties.</td>
-            <td>Marshall, MI</td>
-          </tr>
-          <tr>
-            <td>June, 2009</td>
-            <td>Trip to South Haven</td>
-            <td>South Haven, MI</td>
-          </tr>
-        </table>
-        <p>
-          "I've known Sean for over a decade, from his early days at McDonald's to becoming a boss at a casino in West Virginia, and now nearing graduation at Michigan State University. Sean is the epitome of hard work and dedication. From staffing and scheduling to training, he's always gone the extra mile in his professional roles.
+          <p class="post-image">
+            <img alt="Picture of Shane. Sean's close friend." src="images/Shane_D.png">
+          </p>
+          <div class="blog-content">
+            <div class="author-content">
+            <h3>Thoughts from my closest friend...</h3>
+            <address class="author">Shane Dietrich</address>
+            <time datetime="2023-10-25" title="October 25, 2023">October 25,2023</time>
+            </div>
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Event</th>
+                <th>Location</th>
+              </tr>
+              <tr>
+                <td>2005</td>
+                <td>The year we first met!</td>
+                <td>Battle Creek, MI</td>
+              </tr>
+              <tr>
+                <td>October 31, 2006</td>
+                <td>Our first Halloween festivties.</td>
+                <td>Marshall, MI</td>
+              </tr>
+              <tr>
+                <td>June, 2009</td>
+                <td>Trip to South Haven</td>
+                <td>South Haven, MI</td>
+              </tr>
+            </table>
+            <p>
+              "I've known Sean for over a decade, from his early days at McDonald's to becoming a boss at a casino in West Virginia, and now nearing graduation at Michigan State University. Sean is the epitome of hard work and dedication. From staffing and scheduling to training, he's always gone the extra mile in his professional roles.
 
-          At McDonald's, he took extra hours and performed tasks to perfection. As a manager, his organizational skills shined, ensuring staff were where they needed to be. He constantly improved himself—whether it was moving up in his career, taking an unfathomable number of classes, or working GrubHub gigs to make ends meet.
-          
-          Sean applies himself fully, whether in academics or work. I have no doubt he will graduate with top marks, poised for a bright future. To employers considering him: hiring Sean isn't just a good decision—it's a no-brainer. His commitment and skill set are unmatched.
-          
-          On a personal level, Sean is the best friend anyone could ask for. Both my family and I consider him as such. His personal qualities reflect his professional ones—smart, dedicated, and supremely reliable.
-          
-          In short, if you want someone who embodies dedication, intelligence, and growth, Sean is your ideal candidate."
-        </p>
+              At McDonald's, he took extra hours and performed tasks to perfection. As a manager, his organizational skills shined, ensuring staff were where they needed to be. He constantly improved himself—whether it was moving up in his career, taking an unfathomable number of classes, or working GrubHub gigs to make ends meet.
+              
+              Sean applies himself fully, whether in academics or work. I have no doubt he will graduate with top marks, poised for a bright future. To employers considering him: hiring Sean isn't just a good decision—it's a no-brainer. His commitment and skill set are unmatched.
+              
+              On a personal level, Sean is the best friend anyone could ask for. Both my family and I consider him as such. His personal qualities reflect his professional ones—smart, dedicated, and supremely reliable.
+              
+              In short, if you want someone who embodies dedication, intelligence, and growth, Sean is your ideal candidate."
+            </p>
+          </div>
       </article>
-      <h3>Thoughts from my mother...</h3>
-      <address class="author">Gloria Cowden</address>
-      <time datetime="2023-10-27" title="October 27, 2023">October 27, 2023</time>
-      <p><img alt="Picture of Gloria Cowden. Sean's mother." src="images/Gloria_J.png"></p>
-      <p>
-        "From mowing lawns at age 11 to a stint in the Air Force as a communications specialist, Sean's work ethic has always been evident. After military service, he returned to McDonald's, this time as an Assistant General Manager, before transitioning to FireKeepers Casino in Battle Creek. Gaining valuable experience, he then moved to a West Virginia casino as a supervisor in the table games department.
+      <article class="blog-post">
+        <p class="post-image">
+          <img alt="Picture of Gloria Cowden. Sean's mother." src="images/Gloria_J.png">
+        </p>
+        <div class="blog-content">
+          <h3>Thoughts from my mother...</h3>
+          <div class="author-content">
+          <address class="author">Gloria Cowden</address>
+          <time datetime="2023-10-27" title="October 27, 2023">October 27, 2023</time>
+          </div>
+          <p>
+            "From mowing lawns at age 11 to a stint in the Air Force as a communications specialist, Sean's work ethic has always been evident. After military service, he returned to McDonald's, this time as an Assistant General Manager, before transitioning to FireKeepers Casino in Battle Creek. Gaining valuable experience, he then moved to a West Virginia casino as a supervisor in the table games department.
 
-        In 2020, amidst the challenges of COVID and remote learning, Sean returned to academics, pursuing a Bachelor's degree in Computer Science at Michigan State University. Balancing rigorous coursework with a part-time job delivering food, he often describes his educational journey as his toughest job yet. But true to form, Sean has never shied away from challenges; he confronts them head-on.
-        
-        As his graduation looms closer, his resilience and determination make me incredibly proud. The challenges he's overcome speak volumes about his character, and I'm excited to see where his Computer Science degree will lead him next."
-      </p>
-
+            In 2020, amidst the challenges of COVID and remote learning, Sean returned to academics, pursuing a Bachelor's degree in Computer Science at Michigan State University. Balancing rigorous coursework with a part-time job delivering food, he often describes his educational journey as his toughest job yet. But true to form, Sean has never shied away from challenges; he confronts them head-on.
+            
+            As his graduation looms closer, his resilience and determination make me incredibly proud. The challenges he's overcome speak volumes about his character, and I'm excited to see where his Computer Science degree will lead him next."
+          </p>
+        </div>
+      </article>
     </section>
     <section>
       <h3>Newsletter signup</h3>

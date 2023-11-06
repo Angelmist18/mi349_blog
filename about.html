@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About - Sean's Blog</title>
-    <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
         <h1>About Me</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-          </ul>
-        </nav>
     </header>
-    <section>
+    <nav class="sticky-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <figure class="floated-figure"><img alt="Computer screen with bootup code displayed." src="images/Screen_code.jpg">
+      <figcaption>Captivating Bootup Code</figcaption>
+    </figure>
+    <main class="content">
+      <section class="skills">
         <h2>My Key Skills</h2>
         <ul class="key-skills">
             <li><strong>Network Security:</strong> Proficient in safeguarding domains from cyber threats.</li>
@@ -27,8 +31,8 @@
             <li><strong>Customer Relations:</strong> Managed over 100 customer interactions daily, resolving disputes and queries.</li>
             <li><strong>Team Leadership:</strong> Oversaw and mentored employees, ensuring best practices and procedures.</li>
         </ul>
-    </section>
-    <section id="about">
+      </section>
+      <section id="about">
         <h2>My Personal Story...</h2>
         <p>
             Hello there! I'm Sean Burch, an aspiring IT professional with a deep-seated passion for the ever-evolving world of technology. My journey began with foundational IT courses at Purdue University Global, further solidifying my technical knowledge at Blue Ridge Community and Technical College. Now, I'm expanding my horizons at Michigan State University, pursuing a Bachelor of Computer Science and anticipating my graduation in May 2024.
@@ -40,8 +44,8 @@
         
             So, whether you're keen to learn more about my professional endeavors or you're here to read firsthand accounts from those who know me best, you've come to the right place. Dive in and get to know me better. Welcome to my blog!
         </p>
-        <p><img alt="Computer screen with bootup code displayed." src="images/Screen_code.jpg"></p>
-    </section>
+      </section>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
