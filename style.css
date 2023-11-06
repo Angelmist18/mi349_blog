@@ -171,72 +171,6 @@ li {
     margin-left: auto;
 }
 
-/* Mobile Styles */
-@media only screen and (max-width: 600px) {
-    body {
-        margin: 20px;
-        padding: 20px;
-        font-size: smaller; /* Adjust font size for mobile */
-    }
-
-    /* Make navigation stack vertically and expand the touch area */
-    nav.sticky-nav ul {
-        flex-direction: column;
-    }
-
-    nav.sticky-nav ul li {
-        margin-left: 0; /* Remove the margin between links */
-        margin-bottom: 10px; /* Add a little space between each item */
-    }
-
-    /* Make the images responsive */
-    .floated-figure img,
-    .post-image img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Adjust the form for mobile */
-    .form {
-        flex-direction: column;
-    }
-
-    .form label {
-        flex-basis: 100%; /* Make labels take full width */
-        text-align: left; /* Align labels to the left */
-        margin-bottom: 5px; /* Add space below the label */
-    }
-
-    .form input,
-    .form select,
-    .form textarea,
-    .form button {
-        flex-basis: 100%; /* Make form elements take full width */
-        margin-right: 0; /* Remove margin */
-    }
-
-    /* If your navigation links are too close, increase the padding */
-    nav.sticky-nav ul li a {
-        padding: 10px; /* Larger touch area for links */
-        display: block; /* Makes the entire area clickable */
-    }
-
-    /* Adjust the size of headings */
-    h1 {
-        font-size: 2em; /* Smaller size for h1 on mobile */
-    }
-
-    h2 {
-        font-size: 1.5em; /* Smaller size for h2 on mobile */
-    }
-
-    h3 {
-        font-size: 1.3em; /* Smaller size for h3 on mobile */
-    }
-
-    /* Any other styles that should change on mobile go here */
-}
-
 /* iPhone XS and similar devices */
 @media only screen and (max-width: 375px) and (-webkit-device-pixel-ratio: 3), 
        only screen and (max-width: 375px) and (device-pixel-ratio: 3) {
@@ -248,12 +182,29 @@ li {
 
     /* Adjustments to the navigation menu to make it more mobile-friendly */
     nav.sticky-nav ul {
-        flex-direction: column; /* stack the links vertically */
+        flex-direction: column; /* stack the links vertically if needed */
+        justify-content: space-around; /* space out links evenly if needed */
         align-items: center; /* center the links */
     }
 
     nav.sticky-nav ul li {
         margin: 5px 0; /* reduce space between links */
+    }
+
+    /* Adjust the size and layout of blog post images */
+    .post-image img {
+        width: 100%; /* makes the image responsive */
+        height: auto; /* maintain aspect ratio */
+        max-width: 150px; /* set a maximum width for the image */
+    }
+
+    /* Adjust the blog post flexbox to stack content under the image */
+    .blog-post {
+        flex-direction: column; /* stack flex items vertically */
+    }
+
+    .post-content {
+        width: 100%; /* allow the text to fill the available space */
     }
 
     /* Adjust the form layout for smaller screens */
@@ -278,7 +229,7 @@ li {
         margin-top: 10px; /* add some space above the submit button */
     }
 
-    /* Adjust the size and layout of images to fit small screens */
+    /* Adjust the size and layout of floated images to fit small screens */
     .floated-figure {
         float: none; /* prevent the image from floating */
         margin: 0 auto; /* center the image */
